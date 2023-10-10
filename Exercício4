@@ -1,0 +1,28 @@
+#exercicio0004.py
+"""
+Exercícios
+
+1) Acrescente ao menos mais duas cores à lista de cores possíveis
+Veja os nomes de cores válidos em: https://pt.wikipedia.org/wiki/Lista_de_cores
+(coluna Nome Web)
+Acrescentado as cores orange e yellow
+2) Faça o triângulo apontar para cima
+Feito
+3) Remova a cor vermelha da lista de cores possíveis
+Removida
+4) Mude a largura da linha
+Mudei
+"""
+
+import turtle
+import random
+
+turtle = turtle.Turtle()
+colors = [ 'purple', 'blue',"orange","yellow"]#Acresentado duas cores no final e removido o red
+turtle.pensize(10)#Alterei a largura da linha
+for _ in [1, 2, 3]:#caso eu queira acrescentar um quarto movimento eu ponho o número 4 aí(isso ser para que não só tenha 3 movimentos no desenho do triângulo)
+    color = random.choice(colors)
+    turtle.color(color)
+    turtle.forward(100)
+    turtle.left(120)#alterei para o left
+   #end
